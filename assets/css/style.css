@@ -3741,7 +3741,7 @@ short code
   right: 0;
 }
 .home-v1-hero-wrapper {
-  padding: 250px 0px 150px;
+  padding: 200px 0px 150px;
   position: relative;
   min-height: 100vh;
 }
@@ -3779,7 +3779,8 @@ short code
   right: 15%;
 }
 .home-v1-hero-content {
-  max-width: 1070px;
+  /* max-width: 1070px; */
+  max-width: 1200px;
   margin: 0 auto 50px;
   text-align: center;
 }
@@ -13849,4 +13850,36 @@ short code
 }
 body {
   overflow-x: hidden;
+}
+
+
+/* 新增 */
+.title-wrap {
+    display:flex;
+    justify-content: space-between;
+}
+.title-wrap h1 {
+    font-weight: 200;
+}
+.title-left {
+    display:flex;
+}
+.title-right {
+    display:flex;
+    writing-mode: vertical-lr;
+    flex-direction: column;
+    text-align: start;
+}
+
+.title-left h1 {
+    font-size: 300px;
+}
+.title-right h1 {
+    font-size: 110px;
+    letter-spacing: 18px;
+}
+.title-right h4 {
+    font-size: 22px;
+    letter-spacing: 10px;
+    padding-top: 7px;
 }
