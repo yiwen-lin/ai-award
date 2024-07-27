@@ -224,7 +224,7 @@ short code
   --faq-bg: rgba(218, 218, 218, 0.15);
   --section-title-v2-span-clr: rgba(21, 37, 53, 0.02);
   --body-clr-bdr: #555555;
-  --font-clr-bdr: #152535;
+  --font-clr-bdr: #152535;    
   --black-bdr: #000;
   --white-bdr: #fff;
   --gainsboro-bdr: #dadada;
@@ -244,7 +244,7 @@ short code
   --faq-shadow: rgba(0, 0, 0, 0.07);
   --v1-color: rgba(0, 0, 0, 0.02);
   --gradient-primary: linear-gradient(53.28deg, #223fdc 4.8%, #ff175c 86.91%);
-  --gradient-secondary: linear-gradient(53.28deg, #ffa100 4.8%, #ff175c 86.91%);
+  --gradient-secondary: linear-gradient(53.28deg, #B5BDBB 4.8%, #ECD2C4 86.91%);
   --general-submenu-bg: linear-gradient(
     0deg,
     #ff6b17 0%,
@@ -1620,7 +1620,7 @@ short code
   margin-right: 20px;
 }
 .meet-speaker-slider-area {
-  background-color: var(--snow-bg);
+  /* background-color: var(--snow-bg); */
   position: relative;
 }
 .meet-speaker-slider-area .shape-01,
@@ -7765,7 +7765,7 @@ short code
   justify-content: space-between;
 }
 .logo {
-  max-width: 240px;
+  max-width: 160px;
 }
 .logo a svg,
 .logo a img {
@@ -7991,6 +7991,8 @@ short code
   position: fixed;
   width: 100%;
   z-index: 99999999;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .header-general .header-general-wrapper .logo {
   margin-right: 70px;
@@ -9633,10 +9635,10 @@ short code
   transform: translateX(0px);
   opacity: 1;
 }
-.speaeker-thumb:hover .thumb::before {
+/* .speaeker-thumb:hover .thumb::before {
   opacity: 1;
   visibility: visible;
-}
+} */
 .speaeker-title {
   margin-top: 15px;
 }
@@ -9646,6 +9648,7 @@ short code
   font-weight: 500;
   color: var(--font-clr-txt);
   line-height: 1;
+  margin-bottom:10px;
 }
 .speaeker-title span {
   font-size: 16px;
@@ -11414,7 +11417,8 @@ short code
 .schedule-v1-content-wrapper {
   flex: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: 1fr;
   position: relative;
   counter-reset: section;
 }
@@ -11435,7 +11439,7 @@ short code
   display: block;
 }
 .schedule-v1-content-wrapper .content-inner {
-  padding: 50px 10px 50px 65px;
+  padding: 50px 65px;
   border-right: 1px dashed #d3d3d3;
   background-color: var(--pricing-tbl-item-bg);
   position: relative;
@@ -11443,7 +11447,7 @@ short code
 .schedule-v1-content-wrapper .content-inner:last-child {
   border-right: none;
 }
-.schedule-v1-content-wrapper .content-inner::before {
+/* .schedule-v1-content-wrapper .content-inner::before {
   counter-increment: section;
   content: counter(section);
   position: absolute;
@@ -11453,7 +11457,7 @@ short code
   font-weight: 900;
   color: var(--number-color);
   line-height: 1;
-}
+} */
 .schedule-v1-content-wrapper .content-inner .title h4 {
   background: var(--gradient-secondary);
   -webkit-background-clip: text;
@@ -11478,7 +11482,7 @@ short code
   margin-top: 10px;
 }
 .schedule-v1-content-wrapper .content-inner .content {
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 .schedule-v1-content-wrapper .content-inner .content h4 {
   font-size: 25px;
@@ -11486,9 +11490,9 @@ short code
   line-height: 1.2;
 }
 .schedule-v1-content-wrapper .content-inner .content p {
-  max-width: 460px;
+  /* max-width: 460px; */
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.5;
   margin-top: 10px;
 }
 @media screen and (max-width: 1199px) {
@@ -11550,10 +11554,10 @@ short code
   .schedule-v1-content-wrapper .content-inner {
     padding: 15px;
   }
-  .schedule-v1-content-wrapper .content-inner::before {
+  /* .schedule-v1-content-wrapper .content-inner::before {
     right: 20px;
     font-size: 70px;
-  }
+  } */
   .schedule-v1-content-wrapper .content-inner .title h4 {
     font-size: 22px;
   }
@@ -12272,7 +12276,8 @@ short code
 }
 .speaker-details-v1-wrapper {
   display: block;
-  max-width: 1205px;
+  /* max-width: 1205px; */
+  max-width: 800px;
   margin: 0 auto 20px;
   position: relative;
 }
@@ -12282,13 +12287,13 @@ short code
 .speaker-details-v1-wrapper .number-tag {
   position: absolute;
   z-index: 9;
-  transform: rotate(-90deg);
-  left: -117px;
-  top: 58px;
+  /* transform: rotate(-90deg); */
+  left: -48px;
+  top: 0px;
 }
-.speaker-details-v1-wrapper .number-tag h4 {
+.speaker-details-v1-wrapper .number-tag h3 {
   padding: 17px;
-  background-color: var(--radical-red-bg);
+  background-color: #296678;
   color: var(--white-txt);
   font-weight: 500;
   font-size: 24px;
@@ -13882,4 +13887,12 @@ body {
     font-size: 22px;
     letter-spacing: 10px;
     padding-top: 7px;
+}
+
+ol.ol-number {
+  list-style-type: auto; 
+  padding-left: 20px;
+}
+ol.ol-number li {
+  margin:10px auto;
 }
