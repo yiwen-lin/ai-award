@@ -831,7 +831,7 @@ short code
     margin-left: 40px;
   }
 }
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1200px) {
   .hamburger {
     display: block;
   }
@@ -7799,7 +7799,7 @@ short code
 .header-account .register {
   margin-left: 30px;
 }
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1200px) {
   .header-area {
     background-color: var(--white-bg);
     box-shadow: 0px 10px 40px var(--header-v1-sdo);
