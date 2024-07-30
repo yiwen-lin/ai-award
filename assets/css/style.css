@@ -3705,7 +3705,7 @@ short code
   }
 }
 .home-v1-hero-area {
-  background-image: url(/assets/img/bg/home-v1-hero-bg.jpg);
+  background-image: url(/assets/img/bg/home-bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -13942,7 +13942,7 @@ body {
     color: var(--snow-bg);
   }
   .home-v1-hero-area {
-    background-image: url(/assets/img/bg/home-v1-hero-bg-mb.jpg);
+    background-image: url(/assets/img/bg/home-bg-mb.jpg);
     background-size:cover;
     background-repeat:no-repeat;
   }
