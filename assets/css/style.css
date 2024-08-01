@@ -764,7 +764,7 @@ short code
   max-width: 60px;
 }
 .hamburger .burger {
-  filter: url(#gooeyness);
+  /* filter: url(#gooeyness); */
 }
 .hamburger .x {
   transform: scale(0);
