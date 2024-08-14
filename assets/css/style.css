@@ -583,6 +583,9 @@ short code
     margin-bottom: 20px;
   }
 }
+.container {
+  overflow: hidden;
+}
 .dropdown {
   position: relative;
 }
@@ -9964,7 +9967,7 @@ short code
 .single-table {
   position: relative;
   text-align: center;
-  padding: 65px 10px;
+  padding: 50px 10px;
   transition: all 0.3s ease-in-out;
   z-index: 1;
   background-position: top bottom;
@@ -10044,15 +10047,19 @@ short code
   visibility: visible;
 }
 .table-title {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .table-title h4 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 1.2;
-  margin-bottom: 20px;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: var(--body-clr-txt);
   transition: all 0.4s ease-in-out;
+}
+.table-title p {
+  color: var(--primary-bg);
 }
 .table-title h1 {
   font-size: 48px;
@@ -10061,14 +10068,17 @@ short code
   transition: all 0.4s ease-in-out;
   display: inline-block;
 }
+.table-img {
+  margin-bottom:20px;
+}
 .table-list {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 .table-list ul li {
   font-size: 16px;
   font-weight: 400;
   color: var(--body-clr-txt);
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .table-list ul li:last-child {
   margin-bottom: 0;
@@ -10111,7 +10121,7 @@ short code
     grid-gap: 20px;
   }
   .single-table {
-    padding: 50px 10px;
+    padding: 40px 10px;
   }
   .table-title {
     margin-bottom: 20px;
@@ -10124,10 +10134,10 @@ short code
     font-size: 40px;
   }
   .table-list {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   .table-list ul li {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
   .table-button a {
     font-size: 16px;
@@ -13976,4 +13986,42 @@ ol.ol-number li {
   font-size: 14px;
   color: #ddd;
   line-height: 1.7;   
+}
+
+/* 現場直播 */
+/* 
+#ytplayer {
+  min-height: 700px;
+  max-width: 1200px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+} */
+.video_frame {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+.videobox {
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative;
+  margin-bottom: .5rem;
+  text-align: left;
+}
+.videobox iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+@media only screen and (max-width: 767px) {
+  /* #ytplayer {
+      min-height: 400px;
+      max-width: 1200px;
+  } */
+  .video_frame {
+    padding: 0;   
+    margin-top: 0;
+  }
 }
