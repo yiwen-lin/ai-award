@@ -1,6 +1,4 @@
 (function($) {
-    var allfunction = {
-
         //============== Menu Icon ============== 
         menu_icon: function() {
             $('.main-menu ul li').each(function() {
@@ -510,3 +508,6 @@ new simpleParallax(image, {
     delay: .6,
 	orientation: 'right'
 });
+
+
+

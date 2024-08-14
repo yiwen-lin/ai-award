@@ -209,7 +209,7 @@ short code
   --gainsboro-bg: #dadada;
   --snow-bg: #ecd2c4;
   --primary-bg: #296678;
-  --radical-red-bg: #ff5521;
+  --radical-red-bg: #f9aa87;
   --warning-bg: #ffa100;
   --sky-blue-bg: #00c2ff;
   --w-light: #fafafa;
@@ -2129,8 +2129,9 @@ short code
   margin-bottom: 30px;
 }
 .why-chose-v1-content p {
-  font-size: 16px;
-  line-height: 1.4;
+  font-size: 17px;
+  line-height: 1.65;
+  text-align: justify;
 }
 .why-chose-v1-content ul {
   margin-top: 25px;
@@ -3309,20 +3310,20 @@ short code
 }
 .sponsor-v1-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
-  max-width: 1410px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .single-sponsor-v1 {
   /* background-color: var(--snow-bg); */
-  padding: 60px 50px;
+  padding: 40px 40px;
   transition: all 0.4s ease-in-out;
   display: flex;
   align-items: center;
 }
 .single-sponsor-v1 img {
-  max-height: 60px;
+  /* max-height: 60px; */
   width: 100%;
   transition: all 0.3s ease-in-out;
 }
@@ -3362,10 +3363,10 @@ short code
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 20px;
   }
   .single-sponsor-v1 img {
-    max-width: 100px;
+    /* max-width: 150px; */
   }
   .sponsor-v1-area .trangle-shape {
     top: 23%;
@@ -12184,7 +12185,7 @@ short code
   max-width: 980px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: start;
   position: relative;
 }
 .speaker-details-v1-profile .small-shape-01,
@@ -12232,15 +12233,17 @@ short code
 .speaker-details-v1-profile-content span {
   font-size: 18px;
   line-height: 1;
-  color: var(--body-clr-txt);
+  color: var(--font-clr-bg);
   display: block;
-  margin-top: 10px;
+  margin-top: 20px;
   font-weight: 400;
 }
 .speaker-details-v1-profile-content p {
-  font-size: 16px;
-  line-height: 1.4;
-  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.65;
+  margin-top: 18px;
+  font-weight: 300;
+  text-align: justify;
 }
 .speaker-details-v1-profile-content .social {
   margin-top: 30px;
@@ -12369,6 +12372,13 @@ short code
   .speaker-details-v1-wrapper .number-tag h4 {
     padding: 10px;
     font-size: 16px;
+  }
+  .speaker-details-v1-profile {
+    align-items: center;
+  }
+  .speaker-details-v1-area {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -13986,6 +13996,18 @@ ol.ol-number li {
   font-size: 14px;
   color: #ddd;
   line-height: 1.7;   
+}
+.single-speaeker:hover a,
+.single-speaeker:hover .speaeker-title span{
+  color:var(--font-clr-bg);
+  transition: all 0.3s ease-out;
+}
+.btn+.btn {
+  margin:0 20px;
+}
+.btn+.btn {
+  margin-left:20px;
+  background: var(--radical-red-bg);
 }
 
 /* 現場直播 */
