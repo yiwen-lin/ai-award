@@ -1,4 +1,5 @@
 (function($) {
+    var allfunction = {
         //============== Menu Icon ============== 
         menu_icon: function() {
             $('.main-menu ul li').each(function() {
@@ -510,4 +511,27 @@ new simpleParallax(image, {
 });
 
 
+
+
+
+//nav hover
+$(function(){
+    var tooltipTriggerList1 = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip1"]'))
+    var tooltipList = tooltipTriggerList1.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl,{
+        container: '.tooltipTrigger1',
+        placement: 'bottom',
+        trigger: 'hover'
+      })
+    })
+
+    var tooltipTriggerList2 = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip2"]'))
+    var tooltipList = tooltipTriggerList2.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl,{
+        container: '.tooltipTrigger2',
+        placement: 'bottom',
+        trigger: 'hover focus'
+      })
+    })
+  });
 

@@ -7739,6 +7739,9 @@ short code
   position: relative;
   z-index: 1;
 }
+.header-area .container {
+  overflow: unset;
+}
 .header-area .header-shape {
   position: absolute;
   top: -30px;
@@ -8020,6 +8023,30 @@ short code
   li
   a::before {
   background: var(--primary-bg);
+}
+.tooltipTrigger1,
+.tooltipTrigger2 {
+  position: relative;
+}
+.tooltip {
+  word-break: keep-all;
+  left: 50% !important;
+  top: 80% !important;
+  transform: translate3d(-50%, -50%, 0px) !important;
+}
+.tooltipTrigger2.header-account .tooltip {
+    word-break: keep-all;
+    left: 50% !important;
+    top: 140% !important;
+    transform: translate3d(-50%, -50%, 0px) !important;
+}
+@media screen and (max-width: 1199px) {
+  .tooltip {
+    word-break: keep-all;
+    left: 0 !important;
+    top: 0 !important;
+    transform: translate3d(15px, 80%, 0px) !important;
+  }
 }
 .header-general
   .header-general-wrapper
