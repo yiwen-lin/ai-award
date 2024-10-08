@@ -3315,6 +3315,11 @@ short code
   max-width: 700px;
   margin: 0 auto;
 }
+.sponsor-v1-wrapper-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0px;
+  max-width:1000px;
+}
 .Sponsor {
   text-align: center;
   margin-top:30px;
@@ -3327,6 +3332,9 @@ short code
   transition: all 0.4s ease-in-out;
   display: flex;
   align-items: center;
+}
+.single-sponsor-v1-width {
+  padding:20px;
 }
 .single-sponsor-v1 img {
   /* max-height: 60px; */
@@ -3370,6 +3378,9 @@ short code
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
+  }
+  .single-sponsor-v1-width {
+    padding:5px;
   }
   .single-sponsor-v1 img {
     /* max-width: 150px; */
