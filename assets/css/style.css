@@ -1705,8 +1705,8 @@ short code
   height: 100%;
   top: 0;
   left: 0;
-  background: var(--gradient-primary);
-  opacity: 0.3;
+  /* background: var(--gradient-primary); */
+  /* opacity: 0.3; */
   z-index: -1;
 }
 .home-v1-sponsor-slider-area {
@@ -4324,7 +4324,10 @@ short code
   -webkit-text-fill-color: transparent;
 }
 .white-section-title-v2 h4 {
-  color: var(--white-txt);
+  /* color: var(--white-txt); */
+  color:#ecd2c4;
+  font-weight: 400;
+  margin-top: 10px;
 }
 .white-section-title-v2 h2 {
   color: var(--white-txt);
